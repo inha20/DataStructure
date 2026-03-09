@@ -1,7 +1,7 @@
 https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 
 # OT
->자료구조
+> 자료구조
 <details><summary> 예시
 </summary>
 ➜ 리스트<br>
@@ -10,22 +10,16 @@ https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 ➜ 큐 ; // FIFO<br>
 ➜ 트리 ; <br>
 ➜ 선형, 비선형 ; <br>
+➜ Soarting, Searching ; <br>
 </details>
+
+
+
+> 알고리즘
+
+
 <details><summary>
 
 </summary>
 
-</details>
-
-
-> 단락
-
-
-<details><summary>한 줄 요약
-</summary>
-➜ 항목1 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 설명1<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 특정 부분 1 ; // 설명2<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 특정 부분 2 ; // 설명3<br>
-➜항목2 <br>
 </details>
