@@ -32,5 +32,12 @@ https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 기술방법
 </summary>
 ➜ 자연어<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 읽기 쉬움<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 명확성 유지 위한 단어 정의 필요<br>
 ➜ 흐름도<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 직관적, 이해 쉬움, <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;⤷ 복잡한 알고리즘은 상당히 복잡해짐. 기술이 어려움.<br>
+➜ 유사 코드 (슈도 코드)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 직관적, 이해 쉬움, <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;⤷ 복잡한 알고리즘은 상당히 복잡해짐. 기술이 어려움.<br>
 </details>
