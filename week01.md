@@ -36,8 +36,9 @@ https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 명확성 유지 위한 단어 정의 필요<br>
 ➜ 흐름도<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 직관적, 이해 쉬움, <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;⤷ 복잡한 알고리즘은 상당히 복잡해짐. 기술이 어려움.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 복잡한 알고리즘은 상당히 복잡해짐. 기술이 어려움.<br>
 ➜ 유사 코드 (슈도 코드)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 직관적, 이해 쉬움, <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;⤷ 복잡한 알고리즘은 상당히 복잡해짐. 기술이 어려움.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 알고리즘의 핵심 내용에만 집중 가능. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 세부 문법 등의 프로그램 구현시 문제점을 숨길 수도 있음.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ java의 세부 문법들이 이해를 방해.<br>
 </details>
