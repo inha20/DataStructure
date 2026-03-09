@@ -2,7 +2,7 @@ https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 
 # OT
 >자료구조
-<details><summary예시
+<details><summary 예시
 </summary>
 ➜ 리스트<br>
 ➜ 그래프<br>
