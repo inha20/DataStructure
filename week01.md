@@ -27,3 +27,10 @@ https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 ➜ 한정된 횟수 후 반드시 종료되어야 하는 유한성.<br>
 ➜ 각 명령어들은 실행이 가능해야 하는 유효성.<br>
 </details>
+
+<details><summary>
+기술방법
+</summary>
+➜ 자연어<br>
+➜ 흐름도<br>
+</details>
