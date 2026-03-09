@@ -2,18 +2,19 @@ https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 
 # OT
 >자료구조
-<details><summary 예시
+<details><summary> 예시
 </summary>
 ➜ 리스트<br>
 ➜ 그래프<br>
 ➜ 스택 ; // LIFO, FILO<br>
 ➜ 큐 ; // FIFO<br>
 ➜ 트리 ; <br>
+➜ 선형, 비선형 ; <br>
 </details>
 <details><summary>
-한 줄 요약
+
 </summary>
-https://github.com/inha20/IOT_Class_review-/issues/5
+
 </details>
 
 
