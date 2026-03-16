@@ -91,6 +91,13 @@ class bag :
         else:
             print("error : bag is false")
 
+    def numOf(bag,e):
+        v=0;
+        for i in range(len(bag)):
+            if e==bag[i]:
+                v+=1
+        if bag:
+            return print(v)
 ```
   
 ```py
@@ -113,6 +120,14 @@ class Bag:
 
     def count(self):
         return len(self.items)
+
+    def numOf(self, e):
+        v=0;
+        for i in range(len(bag)):
+            if e==bag[i]:
+                v+=1
+        if bag:
+            return print(v)
 
 ```
 
