@@ -161,7 +161,7 @@ class Bag:
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 빅 오 O(n)(최악의 경우) : 계산 쉽고 중요한 의미, 널리 사용됨. 빅 오메가 (최소의 경우), 의미가 없음. 빅 세타 (평균의 경우), 계산하기 상당히 까다로움.<br>
 </details>
 
-
+https://github.com/inha20/DataStructure/issues/1
 
 
 
