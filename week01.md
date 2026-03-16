@@ -148,10 +148,10 @@ class Bag:
 </summary>
 ➜ 시간 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 동일한 HW/SW 환경에서 실제로 구현해야 함.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ import time에 time.time() 하여 시간차 보기 <br>
 ➜ 복잡도<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 시간 복잡도 분석 ; 연산의 횟수를 보고 수행 시간을 분석<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 공간 복잡도 분석 ; 필요한 메모리 공간 분석<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ import time에 time.time() 하여 시간차 보기 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ <br>
