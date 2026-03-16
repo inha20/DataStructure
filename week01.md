@@ -49,12 +49,15 @@ https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 <details><summary>
 추상 자료형
 </summary>
-➜ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 읽기 쉬움<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 명확성 유지 위한 단어 정의 필요<br>
-➜ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 직관적, 이해 쉬움, <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 복잡한 알고리즘은 상당히 복잡해짐. 기술이 어려움.<br>
+➜ 피카소의 추상화처럼, 추상적이고 특징적인 부분만 묘사함. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 데이터와 연산이 무엇인지를 정의하지만, 어떻게 하는지는 정의하지 않음.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 초보자가 이를 기술하면 AI가 나머지를 채워주는 방식.<br>
+➜ 예) Bag의 추상 자료형<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 내용물을 데이터, 일반적인 행동을 연산으로 비유. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 이후 각 연산에 인터페이스를 달아 사용자 프로그램으로 확장시킬 수 있음.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ Bag ADT (Abstract Data Type) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 데이터 간 중복 허용, 순서 없음, 비교 가능. 리스트. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 인자(파라미터)의 유뮤는 괄호 안 매개체의 유무로 표시. insert(e), count().<br>
 ➜ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 알고리즘의 핵심 내용에만 집중 가능. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 세부 문법 등의 프로그램 구현시 문제점을 숨길 수도 있음.<br>
