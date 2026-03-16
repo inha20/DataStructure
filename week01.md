@@ -58,9 +58,67 @@ https://github.com/inha20/VacationDataStructure/blob/main/01week.md
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ Bag ADT (Abstract Data Type) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 데이터 간 중복 허용, 순서 없음, 비교 가능. 리스트. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 인자(파라미터)의 유뮤는 괄호 안 매개체의 유무로 표시. insert(e), count().<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ Bag을 클래스로 구현한 후, 메서드를 달자.<br>
 ➜ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 알고리즘의 핵심 내용에만 집중 가능. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 세부 문법 등의 프로그램 구현시 문제점을 숨길 수도 있음.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ java의 세부 문법들이 이해를 방해.<br>
+</details>
+
+
+
+<details><summary>
+예시코드 1, 2
+</summary>
+  
+```py
+
+# Bag ADT 설계
+
+class bag :
+
+    def contains(bag, e) :
+        if e in bag:
+            return e in bag
+        else:
+            print("bag isn't contain!")
+
+    def insert(bag, e):
+        bag.append(e)
+
+    def remove(bag, e):
+        bag.remove(e)
+
+    def count(bag):
+        if bag:
+            return len(bag)
+        else:
+            print("error : bag is false")
+
+```
+  
+```py
+
+# Bag ADT 설계
+
+class Bag:
+
+    def __init__(self):
+        self.items = []
+
+    def insert(self, e):
+        self.items.append(e)
+
+    def remove(self, e):
+        self.items.remove(e)
+
+    def contains(self, e):
+        return e in self.items
+
+    def count(self):
+        return len(self.items)
+
+```
+
 </details>
 
