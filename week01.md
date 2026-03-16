@@ -79,7 +79,7 @@ class bag :
 
     def contains(bag, e) :
         if e in bag:
-            return e in bag
+            return True
         else:
             print("bag isn't contain!")
 
@@ -91,7 +91,7 @@ class bag :
 
     def count(bag):
         if bag:
-            return len(bag)
+            return print(len(bag))
         else:
             print("error : bag is false")
 
