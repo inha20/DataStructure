@@ -152,7 +152,7 @@ class Bag:
 ➜ 복잡도<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 시간 복잡도 분석 ; 연산의 횟수를 보고 수행 시간을 분석<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 공간 복잡도 분석 ; 필요한 메모리 공간 분석<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 알고리즘 연산 횟수 T(n). 대입 연산자는 다른 연산자와 같이 1번으로, 반복을 제어하는 문은 무시. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ <br>
 </details>
