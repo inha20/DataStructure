@@ -177,11 +177,6 @@ def hanoi_tower(n, fr, tmp, to):
         print("원판 1: %s --> %s" % (fr, to))
         hanoi_tower(n-1, tmp, fr, to) //tmp에서 to까지
 ```
-➜ 복잡도<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 시간 복잡도 분석 ; 연산의 횟수를 보고 수행 시간을 분석<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 공간 복잡도 분석 ; 필요한 메모리 공간 분석<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 알고리즘 연산 횟수 T(n). 대입 연산자는 다른 연산자와 같이 1번으로, 반복을 제어하는 문은 무시.return도 무시. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 빅 오 O(n)(최악의 경우) : 계산 쉽고 중요한 의미, 널리 사용됨. 빅 오메가 (최소의 경우), 의미가 없음. 빅 세타 (평균의 경우), 계산하기 상당히 까다로움.<br>
 </details>
 
 
