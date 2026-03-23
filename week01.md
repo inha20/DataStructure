@@ -165,7 +165,7 @@ https://github.com/inha20/DataStructure/issues/1
 
 
 <details><summary>
-하노이탑
+하노이탑 재귀호출
 </summary>
 ➜ 코드 <br>
   
