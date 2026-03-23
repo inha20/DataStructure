@@ -167,9 +167,16 @@ https://github.com/inha20/DataStructure/issues/1
 <details><summary>
 하노이탑
 </summary>
-➜ 시간 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 동일한 HW/SW 환경에서 실제로 구현해야 함.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ import time에 time.time() 하여 시간차 보기 <br>
+➜ 코드 <br>
+  
+```py
+
+def hanoi_tower(n, fr, tmp, to):
+    if(n==1):
+        hanoi_tower(n-1, fr, to, tmp)
+        print("원판 1: %s --> %s" % (fr, to))
+        hanoi_tower(n-1, tmp, fr, to)
+```
 ➜ 복잡도<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 시간 복잡도 분석 ; 연산의 횟수를 보고 수행 시간을 분석<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 공간 복잡도 분석 ; 필요한 메모리 공간 분석<br>
