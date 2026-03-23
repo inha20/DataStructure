@@ -173,9 +173,9 @@ https://github.com/inha20/DataStructure/issues/1
 
 def hanoi_tower(n, fr, tmp, to):
     if(n==1):
-        hanoi_tower(n-1, fr, to, tmp)
+        hanoi_tower(n-1, fr, to, tmp) //fr에서 tmp까지
         print("원판 1: %s --> %s" % (fr, to))
-        hanoi_tower(n-1, tmp, fr, to)
+        hanoi_tower(n-1, tmp, fr, to) //tmp에서 to까지
 ```
 ➜ 복잡도<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 시간 복잡도 분석 ; 연산의 횟수를 보고 수행 시간을 분석<br>
