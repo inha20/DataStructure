@@ -94,6 +94,7 @@ class ArrayList:
             size+=1
             return self.array[pos]
         else:pass
+
     def delete(self, pos):
         global size
         if 0<= pos <size and not self.isEmpty():
