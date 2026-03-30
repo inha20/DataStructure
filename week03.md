@@ -104,6 +104,9 @@ class ArrayList:
             size-=1
             return R
         else:pass
+
+    def __str__(self):
+        return str(self.array[0:self.size])
 ```
 
     
