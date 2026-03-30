@@ -14,6 +14,58 @@
     <summary>파이썬 코드</summary>
     
 ```py
+#데이터멤버_전역변수선언
+capacity=100
+size=0
+array=[None]*capacity
+
+#isEmpty 선언
+def isEmpty():
+    if size==0 :
+        return True
+    else : 
+        return False
+
+#isFull 선언
+def isFull():
+    if size==capacity :
+        return True
+    else :
+        return False
+
+#getEntry 선언
+def getEntry(pos):
+    if 0<=pos<size:
+        return array[pos]
+    else:
+        return None
+ 
+#insert 선언
+def getEntry(pos,e):
+    global size
+    if 0<=pos<size and not isFull():
+        for i in range(size, pos,-1):
+            array[i]=array[i-1] 
+        array[pos]=e
+        size+=1
+        return array[pos]
+    else:
+        print("리스트가 오버플로우 또는 유효하지 않은 삽입 위치")
+        exit()
+
+
+#delete 선언
+def delete(pos):
+    global size
+    if 0<=pos<size and not isEmpty():
+        R=array[pos]
+        for i in range(pos, size-1):
+            array[i]=array[i+1] 
+        size-=1
+        return R
+    else:
+        print("리스트가 언더플로우 또는 유효하지 않은 삽입 위치")
+        exit()
 ```
 
     
