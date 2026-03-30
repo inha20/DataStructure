@@ -67,6 +67,43 @@ def delete(pos):
         print("리스트가 언더플로우 또는 유효하지 않은 삽입 위치")
         exit()
 ```
+```py
+class ArrayList:
+    def __init__(self, capacity=100)
+        self.capacity=capacity
+        self.size=0
+        self.array=[None]*capacity
+
+    def isEmpty(self):
+        return self.size==0
+
+    def isFull(self):
+        return size==self.capacity
+
+    def getEntry(self,pos):
+        if 0<= pos <self.size:
+            return self.array[pos]
+        else :
+            return None
+ 
+    def insert(self, pos,e):
+        if 0<= pos <=self.size and not self.isFull():
+            for i in range(self.size, self.pos,-1):
+                self.array[i]=self.array[i-1] 
+            self.array[pos]=e
+            size+=1
+            return self.array[pos]
+        else:pass
+    def delete(self, pos):
+        global size
+        if 0<= pos <size and not self.isEmpty():
+            R=self.array[pos]
+            for i in range(pos, size-1):
+                self.array[i]=self.array[i+1] 
+            size-=1
+            return R
+        else:pass
+```
 
     
 </details>
