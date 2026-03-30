@@ -12,7 +12,7 @@
 
 <details>
     <summary>파이썬 코드</summary>
-    
+그림에서의 화살표를 기준으로 등호와 부등호, -1, +1에 주의하자.
 ```py
 #데이터멤버_전역변수선언
 capacity=100
@@ -107,8 +107,20 @@ class ArrayList:
 
     def __str__(self):
         return str(self.array[0:self.size])
+    
+    def replace(self, pos,e):
+        if 0<= pos <=self.size:
+            self.array[pos]=e
+
+    def count(self, e):
+        TotalCount=0
+        for i in range(0,self.size):
+            if self.array[i] == e:
+                TotalCount += 1
+        return print(TotalCount)
+
 ```
-그림에서의 화살표를 기준으로 등호와 부등호, -1, +1에 주의하자.
+
     
 </details>
 
