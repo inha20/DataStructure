@@ -107,6 +107,8 @@ class ArrayList:
 
     def __str__(self):
         return str(self.array[0:self.size])
+
+그림에서의 화살표를 기준으로 등호와 부등호, -1, +1에 주의하자.
 ```
 
     
