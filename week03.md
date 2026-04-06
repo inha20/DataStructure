@@ -91,7 +91,7 @@ class ArrayList:
  
     def insert(self, pos,e):
         if 0<= pos <=self.size and not self.isFull():
-            for i in range(self.size, self.pos,-1):
+            for i in range(self.size, pos,-1):
                 self.array[i]=self.array[i-1] 
             self.array[pos]=e
             size+=1
