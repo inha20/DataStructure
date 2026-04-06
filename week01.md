@@ -178,6 +178,7 @@ def hanoi_tower(n, fr, tmp, to):
         print("원판 %d: %s --> %s" % (n, fr, to))
         hanoi_tower(n-1, tmp, fr, to) //tmp에서 to까지
 ```
+귀납법으로 이해하면 쉽다!
 </details>
 
 
