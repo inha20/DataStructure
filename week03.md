@@ -123,6 +123,49 @@ class ArrayList:
         return print(TotalCount)
 
 ```
+```py
+from ArrayList import ArrayList
+
+List=ArrayList(1000)
+
+while True:
+    command=input("[메뉴선택] i-입력, d-삭제, r-변경, p-출력, l- 파일읽기, s-저장, q-종료");
+    
+    if command=="i":
+        pos = int(input("입력 행 번호 0번부터 : "))
+        str = input("내용 : ")
+        List.insert(pos,str)
+    elif command=="d":
+        pos = int(input("삭제 행 번호 0번부터 : "))
+        List.delete(pos)
+    elif command=="r":
+        pos = int(input("변경 행 번호 0번부터 : "))
+        str = input("내용 : ")
+        List.replace(pos,str)
+    elif command=="p":
+        print("Line Editor")
+        for line in range(List.size):
+            print("[%2d] "%line, end="")
+            print(List.getEntry(line))
+        print()
+    elif command=="q":
+        exit()
+    elif command=="l":
+        filename="test.txt"
+        infile=open(filename, "r", encoding="utf-8")
+        lines=infile.readlines()
+        for line in lines:
+            List.insert(List.size,line.rstrip("\n"))
+        infile.close()
+    elif command=="s":
+        filename="test.txt"
+        outfile=open(filename, "w", encoding="utf-8")
+        len=List.size
+        for i in range(len):
+            outfile.write(List.getEntry(i)+"\n")
+        outfile.close()
+
+```
 
     
 </details>
