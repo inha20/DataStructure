@@ -229,7 +229,7 @@ class ArraySet:
         setC=ArraySet()
         for i in range(self.size):
             if not setB.contains(self.array[i]):
-               setC.insert(setB.array[i])
+               setC.insert(self.array[i])
         return setC
     
     def __eq__(self, setB):
