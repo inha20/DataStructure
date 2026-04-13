@@ -174,7 +174,7 @@ while True:
 
 
 <details>
-    <summary>    </summary>
+    <summary> 파이썬 코드   </summary>
     
 ```python
 class ArraySet:
