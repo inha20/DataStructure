@@ -1,6 +1,5 @@
 # 리스트 : 선형 자료구조
 
-> 0을 뒤로 옮기기
 
 <details>
     <summary>리스트 개론</summary>
