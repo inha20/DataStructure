@@ -210,7 +210,42 @@ class ArraySet:
                 self.array[i]=self.array[self.size-1]
                 self.size -=1
 
+    def union(self, setB):
+        setC=ArraySet()
+        for i in range(self.size):
+            setC.insert(self.array[i])
+        for i in range(setB.size):
+            if not setC.contains(setB.array[i]):
+                setC.insert(setB.array[i])
+        return setC
     
+    def intersection(self, setB):
+        setC=ArraySet()
+        for i in range(self.size):
+            if setB.contains(self.array[i]):
+               setC.insert(setB.array[i])
+        return setC
+    
+    def difference(self, setB):
+        setC=ArraySet()
+        for i in range(self.size):
+            if not setB.contains(self.array[i]):
+               setC.insert(setB.array[i])
+        return setC
+    
+    def __eq__(self, setB):
+        if self.size != setB.size:
+            return False
+        for i in range(self.size):
+            if not setB.contains(self.array[i]):
+                return False
+        return True
+    
+    def isSubsetOf(self, setB): 
+        for i in range(self.size):
+            if not setB.contains(self.array[i]):
+                return False
+        return True
 ```
 </details>
 
