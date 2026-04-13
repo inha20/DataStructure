@@ -4,8 +4,13 @@
     <summary>스택 개론</summary>
 ➜ top, elements, LIFO <br>
 ➜ top이 달라지면 구조가 바뀐다고 표현함.<br>
-➜ 입 출력을 역순으로. undo(되돌리기). 이전폐이지로 이동. 함수 호출(시스템 스택). <br>
-➜ 배열 구조 : 삽입, 삭제시 크기 변경. vs 연결 구조 : 구현이 복잡하고 항목 접근이 O(n)으로 느림.<br>
+➜ 예시 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 입 출력을 역순으로.  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ undo(되돌리기).  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 이전폐이지로 이동.  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 함수 호출(시스템 스택). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 괄호 검사. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;⤷ 미로 탐색. <br>
 </details>
 
 <details>
