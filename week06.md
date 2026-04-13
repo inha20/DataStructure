@@ -1,9 +1,9 @@
 # 스택
 
 <details>
-    <summary>리스트 개론</summary>
-➜ 항목들은 순서와 위치를 가짐. <br>
-➜ 임의의 위치에서 삽입, 삭제 가능.<br>
+    <summary>스택 개론</summary>
+➜ top, elements, LIFO <br>
+➜ top이 달라지면 구조가 바뀐다고 표현함.<br>
 ➜ 연산에 대한 인자의 갯수는 0개 이상.<br>
 ➜ 배열 구조 : 삽입, 삭제시 크기 변경. vs 연결 구조 : 구현이 복잡하고 항목 접근이 O(n)으로 느림.<br>
 </details>
