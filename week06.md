@@ -85,7 +85,43 @@ expr1=['8','2','/','3','-','3','2','*','+']
 print(expr1, "==>", evalPostFix(expr1))
 ```
 ```py
+from ArrayStack import ArrayStack
+from EvalPostFix import evalPostFix
 
+def preceduence(op):
+    if op=="(" or op==")": return 0
+    elif op=="+" or op=="-": return 1
+    elif op=="*" or op=="/": return 2
+    else : return -1
 
+def InfixToPostFix(expr) :
+    s=ArrayStack(100)
+    output=[]
+
+    for term in expr:
+        if term in "(":
+            s.push("(")
+        elif term in ")":
+            while not s.isEmpty():
+                op=s.pop
+                if op=="(":
+                    break;
+                else:
+                    output.append(op)
+        elif term in "+-*/":
+            while not s.isEmpty():
+                op=s.peek()
+                if(preceduence(term)<=preceduence(op)):
+                    output.append(op)
+                    s.pop()
+                else:break
+            s.push(term)
+        else:
+            output.append(term)
+
+    while not s.isEmpty():
+        output.append(s.pop)
+
+    return output
 ```
 </details>
