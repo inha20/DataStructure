@@ -63,6 +63,7 @@ class ArrayStack:
 ➜ 괄호 없어, 연산자 우선순위 없어. <br>
 ➜ 수식을 읽으면 바로 계산 가능.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 후위식으로 돌린 후 계산하기.  <br>
+    
 ```py
 from ArrayStack import ArrayStack
 
