@@ -63,7 +63,7 @@ class ArrayStack:
 <details>
     <summary>후위식</summary>
 ➜ 괄호 없어, 연산자 우선순위 없어. <br>
-➜ 수식을 읽으묘 바로 계산 가능.<br>
+➜ 수식을 읽으면 바로 계산 가능.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 후위식으로 돌린 후 계산하기.  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ undo(되돌리기).  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 이전폐이지로 이동.  <br>
