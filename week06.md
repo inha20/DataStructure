@@ -120,7 +120,7 @@ def InfixToPostFix(expr) :
             output.append(term)
 
     while not s.isEmpty():
-        output.append(s.pop)
+        output.append(s.pop())
 
     return output
 ```
