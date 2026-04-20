@@ -59,8 +59,11 @@ class ArrayStack:
 
 ```
 
-
+</details>
 <details>
+
+
+    
     <summary>후위식</summary>
 ➜ 괄호 없어, 연산자 우선순위 없어. <br>
 ➜ 수식을 읽으묘 바로 계산 가능.<br>
