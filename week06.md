@@ -54,10 +54,6 @@ class ArrayStack:
     def __str__(self):
         return str(self.array[0:self.top+1])
 ```
-```py
-
-
-```
 
 </details>
 <details>
@@ -65,9 +61,28 @@ class ArrayStack:
 ➜ 괄호 없어, 연산자 우선순위 없어. <br>
 ➜ 수식을 읽으면 바로 계산 가능.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;⤷ 후위식으로 돌린 후 계산하기.  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ undo(되돌리기).  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 이전폐이지로 이동.  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 함수 호출(시스템 스택). <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 괄호 검사. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;⤷ 미로 탐색. <br>
+```py
+from ArrayStack import ArrayStack
+
+def evalPostFix(expr):
+    s=ArrayStack(100)
+    for token in expr:
+        if token in "+-*/":
+            val2=s.pop()
+            val1=s.pop()
+            if(token=="+"): s.push(val1+val2)
+            if(token=="-"): s.push(val1-val2)
+            if(token=="*"): s.push(val1*val2)
+            if(token=="/"): s.push(val1/val2)
+        else:
+            s.push(float(token))
+    return s.pop()
+
+expr1=['8','2','/','3','-','3','2','*','+']
+print(expr1, "==>", evalPostFix(expr1))
+```
+```py
+
+
+```
 </details>
