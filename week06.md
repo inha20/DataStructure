@@ -18,6 +18,7 @@
 
     
 ```py
+
 class ArrayStack:
     def __init__(self, capacity):
         self.capacity = capacity
@@ -53,6 +54,7 @@ class ArrayStack:
 
     def __str__(self):
         return str(self.array[0:self.top+1])
+
 ```
 
 </details>
