@@ -103,7 +103,7 @@ def InfixToPostFix(expr) :
             s.push("(")
         elif term in ")":
             while not s.isEmpty():
-                op=s.pop
+                op=s.pop()
                 if op=="(":
                     break;
                 else:
@@ -123,5 +123,15 @@ def InfixToPostFix(expr) :
         output.append(s.pop())
 
     return output
+
+if __name__=="__main__":
+    print("중위식을 후위식으로\n")
+    inFix1=["8","/","2","-","3","+", "(","3","*","2", ")"]
+    PostFix1=InfixToPostFix(inFix1)
+    result1=evalPostFix(PostFix1)
+
+    print("중위표기법 : ", inFix1)
+    print("후위표기법 : ", PostFix1)
+    print("계산결과 : ", result1)
 ```
 </details>
