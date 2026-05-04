@@ -68,6 +68,8 @@ for row in map:
 
 # 큐와 원형큐
 
+> 원형큐의 append O(n)을 O(1)으로 줄이기 위함
+
 <details>
     <summary>파이썬 코드</summary>
 
