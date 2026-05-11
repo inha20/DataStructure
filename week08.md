@@ -127,5 +127,18 @@ if __name__=="__main__":
 
 </details>
 
+> Breath First Search는 queue를 이용하는 알고리즘
+
+<details>
+    <summary>파이썬 코드</summary>
+
+    
+```py
+
+
+
+```
+
+</details>
 
 
