@@ -102,7 +102,8 @@ class CircularQueue:
             return str(self.array[self.front+1:self.rear+1])
         else:
             return str(self.array[self.front+1:self.capacity]+self.array[0:self.rear+1])
-        
+    def totalElementCount(self):
+        return (self.rear-self.front+self.capacity)%self.capacity + "개"    
 #TestProgram
 if __name__=="__main__":
     q=CircularQueue(8)
