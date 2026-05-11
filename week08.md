@@ -229,6 +229,15 @@ class CircularDeque(CircularQueue):
             return item
         else:pass
 
+if __name__=="__main__":
+    dq=CircularDeque()
+    for i in range(7):
+        if i%2==0: dq.addRear(i)
+        else: dq.addFront(i)
+    print(dq)
+    for i in range(2):dq.deleteFront()
+    for i in range(3):dq.deleteRear()
+    print(dq)
 ```
 
 </details>
