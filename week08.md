@@ -244,4 +244,17 @@ if __name__=="__main__":
 
 </details>
 
+# 우선순위 큐
+
+> 집합에 가까워. 비선형.
+
+<details>
+    <summary>파이썬 코드</summary>
+
+    
+```py
+
+```
+
+</details>
 
