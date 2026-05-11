@@ -134,8 +134,53 @@ if __name__=="__main__":
 
     
 ```py
+from CircularQueue import CircularQueue 
+
+map = [
+    [1,1,1,1,1,1],
+    ['e',0,1,0,0,1],
+    [1,0,0,0,1,1],
+    [1,0,1,0,1,1],
+    [1,0,1,0,0,'x'],
+    [1,1,1,1,1,1]
+]
+
+MAXSIZE=6
+
+def isValidPos(x,y):
+    if 0<=x<MAXSIZE and 0<=y<MAXSIZE:
+        if map[y][x]==0 or map[y][x]=='x':
+            return True
+    return False
+
+def BFS():
+    print("BPS: ")
+    queue=CircularQueue(100)
+    queue.enqueue((0,1))
+
+    while not queue.isEmpty():
+        here=queue.dequeue()
+        print(here, end="=>")
+
+        (x,y)=here
+
+        if(map[y][x]=='x'):
+            return True
+        map[y][x]="."
+        if isValidPos(x,y-1):queue.enqueue((x,y-1))#상
+        if isValidPos(x,y+1):queue.enqueue((x,y+1))#하
+        if isValidPos(x-1,y):queue.enqueue((x-1,y))#좌
+        if isValidPos(x+1,y):queue.enqueue((x+1,y))#우
+        print("현재 큐: ", queue)
+    return False
 
 
+result = BFS()
+if result: print("미로 탈출 성공!")
+else: print("미로 탈출 실패")
+print("\n[최종 지도]")
+for row in map:
+    print(row)
 
 ```
 
