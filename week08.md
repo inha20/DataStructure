@@ -182,7 +182,9 @@ print("\n[최종 지도]")
 for row in map:
     print(row)
 
+
 ```
+return trun 밑의 코드는 else로 묶어도 되고 안묶어도 알고리즘으로는 같아.
 
 </details>
 
