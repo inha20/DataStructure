@@ -271,7 +271,7 @@ class PriorityQueue :
             self.size+=1
 
     def findMaxIndex(self):
-        if self.isEmpty:return -1
+        if self.isEmpty():return -1
         highest=0
         for i in range(self.size):
             if self.array[highest] < self.array[i]:
@@ -279,21 +279,32 @@ class PriorityQueue :
         return highest
     
     def dequeue(self):
-        highest=self.findMaxIndex
+        highest=self.findMaxIndex()
         if highest != -1:
-            self.size=-1
-            self.array[highest], self.array[self.size]=\
-            self.array[self.size], self.array[highest]
+            self.size -= 1
+            self.array[highest], self.array[self.size]=self.array[self.size], self.array[highest]
             return self.array[self.size]
         
     def peek(self):
-        highest=self.findMaxIndex
+        highest=self.findMaxIndex()
         if highest != -1:
             return self.array[highest]
         
     def __str__(self):
         return str(self.array[0:self.size])
         
+#Test
+if __name__=="__main__":
+    p=PriorityQueue()
+    p.enqueue(34)
+    p.enqueue(18)
+    p.enqueue(27)
+    p.enqueue(45)
+    p.enqueue(15)
+    print(p)
+
+    while not p.isEmpty():
+        print("Max priority: ", p.dequeue())
 
 ```
 
