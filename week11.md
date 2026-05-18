@@ -23,7 +23,10 @@ class LinkedStack:
         return False
     
     def push(self,item):
-        self.top=Node(item, self.top)
+        n=Node(item)
+        n.link=self.top
+        self.top=n
+        #self.top=Node(item, self.top)
 
     def pop(self):
         if not self.isEmpty():
@@ -34,6 +37,38 @@ class LinkedStack:
     def peek(self):
         if not self.isEmpty():
             return self.top.data
+        
+    def size(self):
+        node=self.top
+        count=0
+        while node != None:
+                node=node.link
+                count+=1
+        return count
+
+    def __str__(self):
+        arr=[]
+        node=self.top
+        while node != None:
+            arr.append(node.data)
+            node=node.link
+        return str(arr)
+    
+#Test
+if __name__=="__main__":
+    s=LinkedStack()
+    print("연결리스트 스택 : ", s)
+    msg=input("문자열 입력: ")
+    for c in msg:
+        s.push(c)
+    print("문자열 연결리스트 스택 : ", s)  
+    print("노드의 갯수: ", s.size(), "개") 
+    print("문자열 pop 결과:", end='')
+    while not s.isEmpty():
+        print(s.pop(), end=' ')
+
+    
+
 ```
 
 </details>
