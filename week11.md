@@ -244,3 +244,39 @@ if __name__=="__main__":
 
 </details>
 
+> class LinkedQueue:
+
+<details>
+    <summary>파이썬 코드</summary>
+
+    
+```py
+class Node:
+    def __init__ (self, elem, next=None):
+        self.data=elem
+        self.link=next
+        
+class LinkedQueue:
+    def __init__(self):
+        self.tail=None
+        
+    def isEmpty(self):
+        return self.tail==None
+    
+    def isFull(self):
+        return False
+    
+    def enqueue(self, item):
+        node = Node(item, None)
+        if self.isEmpty():
+            self.tail = node
+            node.link=node
+        else:
+            node.link = self.tail.link
+            self.tail.link=node
+            self.tail=node
+            
+                
+```
+
+</details>
