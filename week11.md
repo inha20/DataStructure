@@ -355,7 +355,7 @@ class DoublyLinkedDeque:
             self.rear=node
 
     def deleteFront(self):
-        if not isEmpty():
+        if not self.isEmpty():
             data = self.front.data
             self.front=self.front.next
             if self.front==None:
@@ -365,7 +365,7 @@ class DoublyLinkedDeque:
             return data
 
     def deleteRear(self):
-        if not isEmpty():
+        if not self.isEmpty():
             data = self.rear.data
             self.rear=self.rear.prev
             if self.rear==None:
@@ -389,7 +389,12 @@ if __name__=="__main__":
             dd.addRear(i)
         else: dd.addFront(i)
     print(dd)
-  
+
+    for i in range(2):
+        dd.deleteFront()
+        dd.deleteRear()
+    dd.deleteRear()
+    print(dd)
 ```
 
 </details>
