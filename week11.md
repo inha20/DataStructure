@@ -276,9 +276,27 @@ class LinkedQueue:
             self.tail.link=node
             self.tail=node
 
-
-교안 보고 나머지 코딩해보기 ~~~~~~~`
-                
+    def dequeue(self):
+        if not self.isEmpty():
+            data = self.tail.link.data
+            if self.tail.link==self.tail:
+                self.tail=None
+            else:
+                self.tail.link=self.tail.link.link
+            return data
+    
+    def peek(self):
+        if not self.isEmpty():
+            return self.tail.link.data
+        
+    def size(self):
+        if self.isEmpty(): return 0
+        else: 
+            count=1
+            while not node == self.tail:
+                node=node.link
+                count +=1
+        return count               
 ```
 
 </details>
