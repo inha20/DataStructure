@@ -293,6 +293,7 @@ class LinkedQueue:
         if self.isEmpty(): return 0
         else: 
             count=1
+            node=self.tail.link
             while not node == self.tail:
                 node=node.link
                 count +=1
