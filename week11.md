@@ -372,7 +372,24 @@ class DoublyLinkedDeque:
                 self.front=None
             else:
                 self.rear.next=None
-            return data    
+            return data
+        
+    def __str__(self):
+        arr=[]
+        node=self.front
+        while not node==None:
+            arr.append(node.data)
+            node=node.next
+        return str(arr)    
+    
+if __name__=="__main__":
+    dd=DoublyLinkedDeque()
+    for i in range (10):
+        if i%2==0:
+            dd.addRear(i)
+        else: dd.addFront(i)
+    print(dd)
+  
 ```
 
 </details>
