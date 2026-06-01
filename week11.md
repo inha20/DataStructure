@@ -275,7 +275,9 @@ class LinkedQueue:
             node.link = self.tail.link
             self.tail.link=node
             self.tail=node
-            
+
+
+교안 보고 나머지 코딩해보기 ~~~~~~~`
                 
 ```
 
