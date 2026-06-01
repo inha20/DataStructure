@@ -321,63 +321,58 @@ class LinkedQueue:
 
     
 ```py
-class Node:
-    def __init__ (self, elem, next=None):
+class DNode:
+    def __init__(self, elem, prev=None, next=None):
         self.data=elem
-        self.link=next
-        
-class LinkedQueue:
-    def __init__(self):
-        self.tail=None
-        
+        self.prev=prev
+        self.next=next
+
+class DoublyLinkedDeque:
+    def __init__ (self):
+        self.front=None
+        self.rear=None
+
     def isEmpty(self):
-        return self.tail==None
+        return self.front==None
     
     def isFull(self):
         return False
     
-    def enqueue(self, item):
-        node = Node(item, None)
-        if self.isEmpty():
-            self.tail = node
-            node.link=node
+    def addFront(self, item):
+        node=DNode(item, None, self.front)
+        if(self.isEmpty()):
+            self.front=self.rear=node
         else:
-            node.link = self.tail.link
-            self.tail.link=node
-            self.tail=node
+            self.front.prev=node
+            self.front=node
 
-    def dequeue(self):
-        if not self.isEmpty():
-            data = self.tail.link.data
-            if self.tail.link==self.tail:
-                self.tail=None
+    def addRear(self, item):
+        node=DNode(item, self.rear, None)
+        if(self.isEmpty()):
+            self.front=self.rear=node
+        else:
+            self.rear.next=node
+            self.rear=node
+
+    def deleteFront(self):
+        if not isEmpty():
+            data = self.front.data
+            self.front=self.front.next
+            if self.front==None:
+                self.rear=None
             else:
-                self.tail.link=self.tail.link.link
+                self.front.prev=None
             return data
-    
-    def peek(self):
-        if not self.isEmpty():
-            return self.tail.link.data
-        
-    def size(self):
-        if self.isEmpty(): return 0
-        else: 
-            count=1
-            node=self.tail.link
-            while not node == self.tail:
-                node=node.link
-                count +=1
-        return count
-    
-    def __str__(self):
-        arr=[]
-        if not self.isEmpty():
-            node=self.tail.link
-            while not node==self.tail:
-                arr.append(node.data)
-                node=node.link
-            arr.append(node.data) 
-        return str(arr)            
+
+    def deleteRear(self):
+        if not isEmpty():
+            data = self.rear.data
+            self.rear=self.rear.prev
+            if self.rear==None:
+                self.front=None
+            else:
+                self.rear.next=None
+            return data    
 ```
 
 </details>
