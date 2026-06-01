@@ -296,7 +296,17 @@ class LinkedQueue:
             while not node == self.tail:
                 node=node.link
                 count +=1
-        return count               
+        return count
+    
+    def __str__(self):
+        arr=[]
+        if not self.isEmpty():
+            node=self.tail.link
+            while not node==self.tail:
+                arr.append(node.data)
+                node=node.link
+            arr.append(node.data) 
+        return str(arr)            
 ```
 
 </details>
